@@ -38,51 +38,73 @@
   </head>
   <body>
     <header>
-      <h1>My Name</h1>
       <nav>
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">about me</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
     <main tabindex="0">
+      <section id="who">
+        <h1>christina mifsud</h1>
+        <h2>
+          front-end developer
+          <span style="font-style: italic; color: #000">&</span>
+          designer
+        </h2>
+      </section>
       <section id="about">
-        <header><h2>About Me</h2></header>
+        <header><h2>about me</h2></header>
         <p>
-          christina mifsud is a contemporary designer working at the
-          intersection of art, media and technology. Through her research-based
-          practice she frequently investigates and posits questions relating to
-          the political, the ethical and the aesthetic.
-        </p>
-        <p>
-          Her work often tackles contemporary issues plaguing society and serves
-          as a medium through which injustices can be fought, by shedding light
-          on marginalised communities as well as exposing corruption and
-          discrimination.
-        </p>
-        <p>
-          She seeks to break down social boundaries using the tool of
-          interaction as a co-creation between the artist and audience. Being
-          trained in Psychology, the designer is interested in tactility and its
-          ability to evoke emotion. While her work inclines toward the
-          sculptural, she is always on the lookout for new mediums and
-          technologies to widen her exploration of the different ways in which
-          people construe life.
+          Front-end developer and designer dedicated to crafting engaging
+          digital experiences. Leveraging creative design sensibilities and
+          proficient coding skills to create user-centric web solutions that
+          blend aesthetics and functionality seamlessly.
         </p>
       </section>
       <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <header><h2>projects showcase</h2></header>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-thumb">
+              <img src="img/kitty.jpg" alt="kitty" width="330" height="300" />
+            </div>
+            <div class="overlay">
+              <div class="card-body">
+                <h3>project title</h3>
+                <p class="text">project description</p>
+              </div>
+              <button>...</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-thumb">
+              <img src="img/kitty.jpg" alt="kitty" width="330" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>project title</h3>
+              <p>project description</p>
+            </div>
+            <button>...</button>
+          </div>
+
+          <div class="card">
+            <div class="card-thumb">
+              <img src="img/kitty.jpg" alt="kitty" width="330" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>project title</h3>
+              <p>project description</p>
+            </div>
+            <button>...</button>
+          </div>
+        </div>
       </section>
       <section id="contact">
-        <header><h2>Contact me</h2></header>
+        <header><h2>contact me</h2></header>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
           excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
@@ -109,7 +131,7 @@
               fill="currentColor"
             />
           </svg>
-          Read me</a
+          read me</a
         >
       </h3>
     </footer>
