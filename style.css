@@ -1,8 +1,8 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
+  --paper: #fff;
   --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
+  --brand: #f2511b;
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
@@ -44,8 +44,13 @@ body > header {
   top: 0;
   z-index: 1;
 }
+nav {
+  width: 100%;
+}
+
 nav ul {
   display: flex;
+  justify-content: flex-end;
   list-style: none;
   gap: var(--gap);
 }
@@ -54,4 +59,98 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+h1 {
+}
+
+#who h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#who h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--brand);
+  font-weight: normal;
+}
+
+h2 {
+}
+
+h3 {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.card-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 330px;
+  height: 400px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+/* TO EDIT!! */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--brand);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button {
+  background-color: var(--paper);
+  border: solid 2px var(--paper);
+  border-radius: 0.5rem;
+  padding: 5px 7px;
+  margin: 15px;
+  font-weight: 600;
+  font-size: 1rem;
 }
