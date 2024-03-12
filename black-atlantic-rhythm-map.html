@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Atlantic Rhythm Map</title>
+    <style>
+      html {
+        animation: fade-in 1s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="project-details">
+      <header>
+        <h2>Black Atlantic Rhythm Map</h2>
+        <h3>
+          A collaboration project showcasing the origins of rhythms and the
+          narrative of the African Atlantic Diaspora.
+        </h3>
+      </header>
+      <div class="project-details-img-container">
+        <div class="gradient-overlay"></div>
+        <a href="https://starter-kit-al84.onrender.com/"
+          ><img
+            src="img/rhythm-map-page-top.png"
+            alt="rhythm map page screenshot"
+        /></a>
+      </div>
+
+      <p>
+        Our team has collaborated closely with artist and dance researcher
+        <a
+          href="https://www.ucc.ie/en/fmt/doctoralschool/phdcandidates/#deirdre-molloy"
+          >Deirdre Molloy</a
+        >
+        to develop an immersive multimedia platform known as the "Black Atlantic
+        Rhythm Map", an integral part of her exploration into the African
+        Atlantic Diaspora narrative.
+      </p>
+      <p>
+        This innovative map serves as a dynamic representation of shared
+        experiences and movements that have shaped the identity of the Black
+        Atlantic community. It emphasizes the significance of drum-dance
+        dialogues, presented in circular formations, as enduring traditions
+        fostering resilience, emotional evolution, and cultural innovation.
+      </p>
+      <p>
+        The "Black Atlantic Rhythm Map" visually encapsulates the transmission
+        of rhythmic knowledge along historical slave routes, integrating layers
+        of temporal and spatial dimensions, from past migrations to contemporary
+        expressions. It amalgamates diverse content types, including digital and
+        archival mapping, typographic narratives, textual resources, video
+        footage, and audio recordings.
+      </p>
+
+      <div class="project-details-img-container">
+        <div class="gradient-overlay"></div>
+        <img
+          src="img/rhythm-map-map-markers.png"
+          alt="rhythm map markers screenshot"
+        />
+      </div>
+
+      <p>
+        Our primary aim was to develop a website showcasing the following key
+        features:
+      </p>
+      <ul>
+        <li>
+          <span style="font-weight: 700">Interactive Map</span>: A central
+          component of the website is an interactive map illustrating the
+          dissemination of rhythmic knowledge across the Black Atlantic. Users
+          can engage with the map by clicking on markers representing various
+          rhythms.
+        </li>
+        <li>
+          <span style="font-weight: 700">Clickable Markers</span>: Each marker
+          on the map is clickable, enabling users to access a comprehensive list
+          of rhythms associated with specific rhythm codes. These codes denote
+          the origins of distinct rhythmic traditions.
+        </li>
+        <li>
+          <span style="font-weight: 700">Modal Display</span>: Clicking on a
+          rhythm marker or selecting a rhythm from the list triggers a modal
+          display containing multimedia content. This content comprises videos,
+          audio clips, and textual descriptions, offering users in-depth
+          insights into each rhythm's cultural significance.
+        </li>
+        <li>
+          <span style="font-weight: 700">Responsive Design</span>: While the
+          website is designed to be responsive, ensuring optimal user experience
+          across different devices, achieving full responsiveness for the map
+          section proved challenging within the project's timeframe due to
+          complexities associated with making large SVG files adapt seamlessly
+          to smaller screens.
+        </li>
+      </ul>
+
+      <div class="project-details-img-container">
+        <div class="gradient-overlay"></div>
+        <img src="img/rhythm-map-modal.png" alt="rhythm map modal screenshot" />
+      </div>
+
+      <p>
+        To realize these features, we utilized
+        <span style="font-weight: 600">React</span> for frontend development,
+        <span style="font-weight: 600">Express</span> for backend functionality,
+        and a <span style="font-weight: 600">PostgreSQL</span> database to
+        manage and store relevant data. The website is hosted on Render,
+        ensuring widespread accessibility from any location with internet
+        connectivity.
+      </p>
+      <p>
+        The "Black Atlantic Rhythm Map" serves as a pivotal element in Deirdre
+        Molloy's narrative, intended for public exhibition to enrich
+        understanding and appreciation of the African Atlantic Diaspora's
+        cultural legacy.
+      </p>
+
+      <footer>
+        <p>
+          Project is live
+          <a href="https://starter-kit-al84.onrender.com/">here</a>. <br />
+          <span style="font-style: italic; color: gray"
+            >P.S. the project is deployed on a free service and the server goes
+            for a snooze sometimes. <br />Thank you for being patient while it
+            wakes up from its slumber.</span
+          >
+        </p>
+        <p style="margin-top: -10px">
+          Source code can be found on
+          <img src="img/github-mark.svg" width="16" height="16" />
+          <a href="https://github.com/ManSangSin/Rhythm-Code"> Github</a>.
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
