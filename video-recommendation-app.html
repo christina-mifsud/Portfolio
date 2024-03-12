@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Recommendation App</title>
+    <style>
+      html {
+        animation: fade-in 1s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="project-details">
+      <header>
+        <h2>Video Recommendation App</h2>
+        <h3>
+          A platform allowing users to discover, share, and interact with
+          YouTube videos.
+        </h3>
+      </header>
+      <div class="project-details-img-container">
+        <div class="gradient-overlay"></div>
+        <a href="https://christinamifsud-fullstackassessment.onrender.com/"
+          ><img
+            src="img/video-rec-app.png"
+            alt="video recommendation page screenshot"
+        /></a>
+      </div>
+
+      <p>
+        The Video Recommendation App aims to provide users with a platform to
+        discover, share, and interact with YouTube videos. By implementing a
+        seamless integration of frontend and backend technologies, the project
+        facilitates the viewing, posting, and management of video content within
+        a user-friendly interface.
+      </p>
+
+      <p>Frontend Implementation:</p>
+      <ul>
+        <li>
+          Utilized React components to display each video, including title,
+          embedded video, vote count, and delete button.
+        </li>
+        <li>
+          Implemented "Up Vote" and "Down Vote" buttons for each video to allow
+          users to interactively increase or decrease vote scores.
+        </li>
+        <li>
+          Created a separate React component for adding videos, featuring fields
+          for title and URL input.
+        </li>
+        <li>
+          Ensured compliance with accessibility guidelines to enhance usability
+          and inclusivity.
+        </li>
+      </ul>
+
+      <div class="project-details-img-container">
+        <div class="gradient-overlay"></div>
+        <img src="img/ " alt="  screenshot" />
+      </div>
+
+      <p>Back end Implementation:</p>
+      <ul>
+        <li>
+          Developed a Node.js-based API with four endpoints: GET "/videos", POST
+          "/videos", GET "/videos/{id}", DELETE "/videos/{id}".
+        </li>
+        <li>
+          Enabled retrieval of all videos, addition of new videos, retrieval of
+          specific videos by ID, and deletion of videos by ID.
+        </li>
+        <li>
+          Implemented data validation to ensure that video title and URL fields
+          are included and valid during video addition.
+        </li>
+      </ul>
+
+      <p>Frontend and Backend Integration:</p>
+      <ul>
+        <li>
+          Established seamless connectivity between the React frontend and
+          Node.js backend to enable data storage and retrieval from the API.
+        </li>
+        <li>
+          Utilized the fetch API in React to retrieve data from the backend API,
+          ensuring that the React app does not read data from local variables.
+        </li>
+      </ul>
+
+      <div class="project-details-img-container">
+        <div class="gradient-overlay"></div>
+        <img src="img/ " alt=" " />
+      </div>
+
+      <p>Database Integration:</p>
+      <ul>
+        <li>
+          Integrated a PostgreSQL database with the backend API to enable
+          persistent storage of video data.
+        </li>
+        <li>
+          Ensured data integrity and reliability by storing video information in
+          a structured and scalable database environment.
+        </li>
+      </ul>
+
+      <p>
+        The Video Recommendation App successfully provided users with a dynamic
+        platform for discovering and interacting with YouTube videos. By
+        implementing intuitive frontend features and robust backend
+        functionalities, the project facilitated seamless video sharing, voting,
+        and management, enhancing the overall user experience.
+      </p>
+
+      <p>
+        Potential future enhancements may include implementing user
+        authentication and authorization features, refining the user interface
+        for improved navigation and usability, and incorporating additional
+        features such as video categorization and search functionality to
+        further enrich the user experience. Additionally, ongoing maintenance
+        and optimization efforts will ensure the scalability and reliability of
+        the platform in meeting the evolving needs of users.
+      </p>
+
+      <footer>
+        <p>
+          Project is live
+          <a href="https://christinamifsud-fullstackassessment.onrender.com/"
+            >here</a
+          >. <br />
+          <span style="font-style: italic; color: gray"
+            >P.S. the project is deployed on a free service and the server goes
+            for a snooze sometimes. <br />Thank you for being patient while it
+            wakes up from its slumber.</span
+          >
+        </p>
+        <p style="margin-top: -10px">
+          Source code can be found on
+          <img src="img/github-mark.svg" width="16" height="16" />
+          <a
+            href="https://github.com/christina-mifsud/Video-Recommendation-App"
+          >
+            Github</a
+          >.
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
