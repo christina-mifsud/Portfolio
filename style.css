@@ -22,6 +22,16 @@ body {
   gap: var(--gap);
   max-width: var(--container);
 }
+
+.hide-scrollbar {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 a,
 a:any-link {
   color: currentColor;
@@ -270,16 +280,36 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.968);
+  background-color: rgba(242, 81, 27, 1);
   z-index: 999;
   cursor: pointer;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.visible {
+  opacity: 1;
 }
 
 #on-load-greeting {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 30%;
   font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#on-load-instructions {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  font-size: 45px;
+  font-weight: normal;
   color: white;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

@@ -11,11 +11,12 @@ toggleButton.addEventListener("click", function () {
 });
 
 // on-load overlay
-
 setTimeout(function () {
   const hideOverlay = sessionStorage.getItem("hideOverlay");
   if (hideOverlay !== "true") {
-    document.getElementById("on-load-overlay").style.display = "block";
+    const overlay = document.getElementById("on-load-overlay");
+    overlay.style.display = "block";
+    overlay.classList.add("visible");
   }
 }, 0);
 
@@ -29,12 +30,34 @@ setTimeout(function () {
 window.onclick = off;
 
 function off() {
-  document.getElementById("on-load-overlay").style.display = "none";
+  const overlay = document.getElementById("on-load-overlay");
+  overlay.classList.remove("visible");
   sessionStorage.setItem("hideOverlay", "true");
 }
 
-// mouse pointer animation - following tutorial found here: https://www.youtube.com/watch?v=7eE8xPyXSR4
+// typewriter on-load-instructions - following tutorial found - https://www.youtube.com/watch?v=MiTJnYHX3iA
+const instructionsDiv = document.getElementById("on-load-instructions");
+const instructionsText = instructionsDiv.textContent.trim();
 
+function textTypingEffect(element, instructionsText, i = 0) {
+  if (i === 0) {
+    element.textContent = "";
+  }
+
+  element.textContent += instructionsText[i];
+
+  if (i == instructionsText.length - 1) {
+    return;
+  }
+
+  setTimeout(() => textTypingEffect(element, instructionsText, i + 1), 150);
+}
+
+setTimeout(() => {
+  textTypingEffect(instructionsDiv, instructionsText);
+}, 1200);
+
+// mouse pointer animation - following tutorial found here: https://www.youtube.com/watch?v=7eE8xPyXSR4
 const coords = { x: 0, y: 0 };
 const squares = document.querySelectorAll(".mouse-square");
 
