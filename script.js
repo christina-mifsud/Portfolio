@@ -9,3 +9,26 @@ toggleButton.addEventListener("click", function () {
       collapsibleParagraph.scrollHeight + "px"; // expand to full height
   }
 });
+
+///////////////////////////////////////////////////
+
+setTimeout(function () {
+  const hideOverlay = sessionStorage.getItem("hideOverlay");
+  if (hideOverlay !== "true") {
+    document.getElementById("on-load-overlay").style.display = "block";
+  }
+}, 0);
+
+setTimeout(function () {
+  const hideOverlay = sessionStorage.getItem("hideOverlay");
+  if (hideOverlay !== "true") {
+    document.getElementById("on-load-greeting").style.display = "block";
+  }
+}, 2000);
+
+window.onclick = off;
+
+function off() {
+  document.getElementById("on-load-overlay").style.display = "none";
+  sessionStorage.setItem("hideOverlay", "true");
+}
