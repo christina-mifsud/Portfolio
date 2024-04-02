@@ -29,10 +29,12 @@ setTimeout(function () {
 
 window.onclick = off;
 
-function off() {
+function off(event) {
   const overlay = document.getElementById("on-load-overlay");
-  overlay.classList.remove("visible");
-  sessionStorage.setItem("hideOverlay", "true");
+  if (event.target === overlay) {
+    overlay.style.display = "none";
+    sessionStorage.setItem("hideOverlay", "true");
+  }
 }
 
 // typewriter on-load-instructions - following tutorial found - https://www.youtube.com/watch?v=MiTJnYHX3iA
