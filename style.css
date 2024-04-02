@@ -99,12 +99,24 @@ h2 {
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
-
 #toggleButton {
-  color: #f2511b;
-  margin: 0;
-  padding: 0;
+  margin-top: -50px;
 }
+
+#toggleButton svg {
+  fill: var(--brand);
+  padding: 0;
+  margin-left: 3;
+}
+
+#toggleButton svg:hover {
+  transition: 0.5s ease;
+  fill: var(--ink);
+  cursor: pointer;
+  transform: translateY(70%) scale(2);
+}
+
+/* Project Cards */
 
 .card-container {
   width: 100%;
@@ -193,25 +205,20 @@ button {
   opacity: 0;
 }
 
-#contact img {
-  margin: 0 7px;
-  color: var(--ink);
+/* Contact Icons */
+
+#contact a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
-/* TODO! flip transition and change image to orange version */
-#contact img {
+#contact a svg {
+  margin: 0 3px;
   transition: transform 0.5s ease;
 }
 
-#contact img:hover {
+#contact a svg:hover {
   transform: rotateY(180deg);
-  filter: grayscale(0%) brightness(80%);
-}
-
-/* TEMP */
-#contact {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
 }
 
 /* Project Pages */
@@ -269,7 +276,7 @@ footer {
   margin: 2.5rem 0;
 }
 
-/* /////////////////////////////////////////////////////////////// */
+/* on-load overlay */
 
 #on-load-overlay {
   position: fixed;
@@ -318,8 +325,8 @@ footer {
 /* mouse pointer animation */
 
 .mouse-square {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   border-radius: 3px;
   background-color: black;
   position: fixed;
