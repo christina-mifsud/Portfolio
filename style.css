@@ -301,25 +301,22 @@ footer {
   opacity: 1;
 }
 
-#on-load-greeting {
+#on-load-text {
   position: absolute;
   top: 40%;
   left: 30%;
-  font-size: 50px;
   color: white;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+}
+
+#on-load-greeting {
+  margin: 0;
+  font-size: 4.5rem;
 }
 
 #on-load-instructions {
-  position: absolute;
-  top: 50%;
-  left: 26%;
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: normal;
-  color: white;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 /* mouse pointer animation */
@@ -334,4 +331,25 @@ footer {
   left: 0;
   pointer-events: none;
   z-index: 998;
+}
+
+/* media queries */
+@media screen and (max-width: 430px) {
+  #on-load-text {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: white;
+  }
+
+  #on-load-greeting {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  #on-load-instructions {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: normal;
+  }
 }

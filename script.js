@@ -31,7 +31,13 @@ window.onclick = off;
 
 function off(event) {
   const overlay = document.getElementById("on-load-overlay");
-  if (event.target === overlay) {
+  const overlayGreeting = document.getElementById("on-load-greeting");
+  const overlayInstructions = document.getElementById("on-load-instructions");
+  if (
+    event.target === overlay ||
+    event.target === overlayGreeting ||
+    event.target === overlayInstructions
+  ) {
     overlay.style.display = "none";
     sessionStorage.setItem("hideOverlay", "true");
   }
