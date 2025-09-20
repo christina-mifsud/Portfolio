@@ -106,19 +106,41 @@ h2 {
 }
 #toggleButton {
   margin-top: -50px;
+  padding-left: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+#toggleButton .squares {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#toggleButton .expand-text {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--brand);
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+#toggleButton:hover .squares {
+  opacity: 0;
+}
+
+#toggleButton:hover .expand-text {
+  opacity: 1;
 }
 
 #toggleButton svg {
   fill: var(--brand);
   padding: 0;
-  margin-left: 3;
-}
-
-#toggleButton svg:hover {
-  transition: 0.5s ease;
-  fill: var(--ink);
-  cursor: pointer;
-  transform: translateY(70%) scale(2);
+  margin-left: 3px;
 }
 
 /* Project Cards */
