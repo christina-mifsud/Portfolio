@@ -44,6 +44,11 @@ a:focus {
   color: var(--brand);
   border-color: currentColor;
 }
+
+.back-button-arrow {
+  font-size: x-large;
+}
+
 /* Site header and navigation */
 body > header {
   background: var(--paper);
